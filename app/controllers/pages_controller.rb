@@ -3,6 +3,7 @@ class PagesController < ApplicationController
     after_action :after_run
     def home
         @names = ["ana","cat","angeline"]
+        @user = "nandini"
         # puts "hey this is home page"
         # render keyword send response back to the browser
         # render "pages/home"

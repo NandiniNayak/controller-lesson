@@ -1,0 +1,10 @@
+<h1> hey <%= user %> </h1>
+
+<%= "hey #{user}" if user.present? %>
+
+<nav>
+    <ul>
+        <li><%= link_to("Home", root_path)%></li>
+        <li><%= link_to("Contact", contact_page_path)%></li>
+    </ul>
+</nav>
