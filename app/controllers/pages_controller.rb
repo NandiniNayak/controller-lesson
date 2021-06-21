@@ -1,9 +1,11 @@
 class PagesController < ApplicationController
-    before_action :before_run
+    before_action :before_run, :get_user, only: [:home]
     after_action :after_run
+    # before_action :get_user
+
     def home
         @names = ["ana","cat","angeline"]
-        @user = "nandini"
+        # @user = "nandini"
         # puts "hey this is home page"
         # render keyword send response back to the browser
         # render "pages/home"

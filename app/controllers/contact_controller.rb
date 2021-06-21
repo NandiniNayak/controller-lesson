@@ -1,5 +1,6 @@
 class ContactController < ApplicationController
+  before_action :get_user
   def page
-    @user = nil
+    # @user = "nandini"
   end
 end
